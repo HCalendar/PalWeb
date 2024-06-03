@@ -15,13 +15,14 @@ import javax.servlet.http.HttpSession;
 public class StudentController {
 
     @Resource
-    private StudentService studentService;
+    private StudentService studentService; //注入学生服务，用于调用学生相关的业务逻辑
 
     /**
      * 添加学生信息
      */
     @PostMapping("/add")
     public Result<?> add(@RequestBody Student student) {
+        //调用服务层方法添加新的学生信息
         int i = studentService.addNewStudent(student);
         if (i == 1) {
             return Result.success();
@@ -36,6 +37,7 @@ public class StudentController {
      */
     @PutMapping("/update")
     public Result<?> update(@RequestBody Student student) {
+        //调用服务层方法更新学生信息
         int i = studentService.updateNewStudent(student);
         if (i == 1) {
             return Result.success();
@@ -49,6 +51,7 @@ public class StudentController {
      */
     @DeleteMapping("/delete/{username}")
     public Result<?> delete(@PathVariable String username) {
+        //调用服务层方法删除学生信息
         int i = studentService.deleteStudent(username);
         if (i == 1) {
             return Result.success();

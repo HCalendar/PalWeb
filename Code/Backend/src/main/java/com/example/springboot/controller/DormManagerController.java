@@ -15,13 +15,14 @@ import javax.servlet.http.HttpSession;
 public class DormManagerController {
 
     @Resource
-    private DormManagerService dormManagerService;
+    private DormManagerService dormManagerService; //注入宿管服务，用于调用与宿管相关的业务逻辑
 
     /**
      * 宿管添加
      */
     @PostMapping("/add")
     public Result<?> add(@RequestBody DormManager dormManager) {
+        //调用服务层方法添加宿管
         int i = dormManagerService.addNewDormManager(dormManager);
         if (i == 1) {
             return Result.success();
@@ -35,6 +36,7 @@ public class DormManagerController {
      */
     @PutMapping("/update")
     public Result<?> update(@RequestBody DormManager dormManager) {
+        //调用服务层方法更新宿管信息
         int i = dormManagerService.updateNewDormManager(dormManager);
         if (i == 1) {
             return Result.success();
@@ -48,6 +50,7 @@ public class DormManagerController {
      */
     @DeleteMapping("/delete/{username}")
     public Result<?> delete(@PathVariable String username) {
+        //调用服务处方法删除宿管
         int i = dormManagerService.deleteDormManager(username);
         if (i == 1) {
             return Result.success();
@@ -63,6 +66,7 @@ public class DormManagerController {
     public Result<?> findPage(@RequestParam(defaultValue = "1") Integer pageNum,
                               @RequestParam(defaultValue = "10") Integer pageSize,
                               @RequestParam(defaultValue = "") String search) {
+        //调用服务处方法查询对应信息的宿管
         Page page = dormManagerService.find(pageNum, pageSize, search);
         if (page != null) {
             return Result.success(page);
@@ -76,6 +80,7 @@ public class DormManagerController {
      */
     @PostMapping("/login")
     public Result<?> login(@RequestBody User user, HttpSession session) {
+        //调用服务处方法验证宿管信息
         Object o = dormManagerService.dormManagerLogin(user.getUsername(), user.getPassword());
         if (o != null) {
             System.out.println(o);

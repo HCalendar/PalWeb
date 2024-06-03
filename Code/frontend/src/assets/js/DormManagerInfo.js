@@ -119,7 +119,7 @@ export default {
             //设置延迟执行
             this.loading = false;
         }, 1000);
-    },
+    },//被创建后调用加载信息数据
     methods: {
         async load() {
             request.get("/dormManager/find", {

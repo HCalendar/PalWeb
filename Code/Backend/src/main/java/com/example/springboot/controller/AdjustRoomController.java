@@ -21,7 +21,7 @@ public class AdjustRoomController {
 
 
     /**
-     * 添加订单
+     * 新增订单
      */
     @PostMapping("/add")
     public Result<?> add(@RequestBody AdjustRoom adjustRoom) {

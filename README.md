@@ -38,3 +38,18 @@ JDK11 Maven Node MySQL
 ## 部分界面测试
 1.登录界面
 ![image](https://github.com/HCalendar/PalWeb/assets/147027924/ef2782e7-a7d8-4526-a39a-7295ff825000)
+2.登录成功（主界面）
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/59b41150-60ac-44ca-8a86-197d4967ef59)
+3.添加学生（学生信息管理界面）
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/596c2d69-1eef-4702-ad73-fd47c18d3628)
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/648be9d7-6b7c-494b-b63d-c3577c8f9b42)
+4.添加床位信息（房间信息管理界面）
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/45f59abc-85d2-437f-af64-8684c46e38aa)
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/69b29291-3245-4901-ad2e-f5791df64c89)
+5.公告添加（公告信息管理界面）
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/9d3c20cd-16e5-49fe-b36a-b8b430147773)
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/bd3e7eae-47ec-42f4-8142-e08b1a1f3481)
+6.个人信息更改（个人信息管理界面）
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/66465680-4fcc-442c-8608-2d644c7c3a65)
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/645b7f35-a7f1-4bd2-ad99-17d615d47280)
+

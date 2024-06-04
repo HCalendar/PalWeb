@@ -34,3 +34,7 @@ JDK11 Maven Node MySQL
 6. Steveehui : 应用设计，DormManagerInfo，StuInfo，VisitorInfo，应用运维
 7. XinYu_Li : 第一次汇报，AdjustRoomInfo，ApplyChangeRoom，ApplyRepairInfo，RepairInfo，PPT2
 8. HCalendar : PPT1，BuildingInfo，MyRoomInfo，RoomInfo，最后汇报
+
+## 部分界面测试
+1.登录界面
+![image](https://github.com/HCalendar/PalWeb/assets/147027924/ef2782e7-a7d8-4526-a39a-7295ff825000)
